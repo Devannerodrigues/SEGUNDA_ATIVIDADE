@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script_extra3.js" defer></script>
+
+    <script>
+        /*  document.getElementById('formulario').addEventListener('submit', function(event) {
+              event.preventDefault(); // Impede o envio do formulário
+  
+              // Obtém os valores dos campos de entrada
+              const numero1 = parseFloat(document.getElementById('numero1').value);
+              const numero2 = parseFloat(document.getElementById('numero2').value);
+              const numero3 = parseFloat(document.getElementById('numero3').value);
+  
+              // Calcula a média
+              const media = (numero1 + numero2 + numero3) / 3;
+  
+              // Exibe o resultado
+              document.getElementById('resultado').textContent = 'A média é: ' + media.toFixed(2);
+          });*/
+    </script>
+</head>
+
+<body>
+    <div id="geral">
+        <h1>Um comerciante calcula o valor da venda dos produtos de
+            seu estabelecimento tendo em vista à tabela abaixo:
+            Valor da compra Valor da venda
+            Menor que de R$ 10,00 lucro de 70%
+            Entre R$10,00 e R$ 30,00 lucro de 50%
+            Entre R$30,00 e R$ 50,00 lucro de 40%
+            Maior R$50,00 lucro de 30%
+
+            Elabore um o algoritmo que possa entrar com nome do produto
+            e valor da compra e imprima o nome do produto e o valor
+            da venda.</h1>
+
+        <form id="formulario">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+            <label for="compra">Valor da Compra:</label>
+            <input type="number" id="compra" name="compra" step="0.01" required>
+            <br><br>
+
+            <button type="submit">Calcular Venda</button>
+            <button type="reset">Limpar</button>
+        </form>
+        <br><br>
+
+
+        <div id="resultado"></div>
+
+    </div>
+
+</body>
+
+</html>
