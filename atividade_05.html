@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+
+     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script_05.js" defer></script>
+
+    <script>
+        /*  document.getElementById('formulario').addEventListener('submit', function(event) {
+              event.preventDefault(); // Impede o envio do formulário
+  
+              // Obtém os valores dos campos de entrada
+              const numero1 = parseFloat(document.getElementById('numero1').value);
+              const numero2 = parseFloat(document.getElementById('numero2').value);
+              const numero3 = parseFloat(document.getElementById('numero3').value);
+  
+              // Calcula a média
+              const media = (numero1 + numero2 + numero3) / 3;
+  
+              // Exibe o resultado
+              document.getElementById('resultado').textContent = 'A média é: ' + media.toFixed(2);
+          });*/
+    </script>
+</head>
+
+<body>
+    <div id="geral">
+        <h1>Escreva um programa que leia as medidas dos lados de um
+            triângulo e escreva se ele é equilátero, isósceles ou
+            escaleno. Sendo que:
+            • Triângulo Equilátero: possui os 3 lados iguais.
+            • Triângulo Isóscele: possui 2 lados iguais.
+            • Triângulo Escaleno: possui 3 lados diferentes</h1>
+
+        <form id="formulario">
+            <label for="lado1">Primeiro lado:</label>
+            <input type="number" id="lado1" name="lado1" required>
+            <br><br>
+
+            <label for="lado2">Segundo lado:</label>
+            <input type="number" id="lado2" name="lado2" required>
+            <br><br>
+
+            <label for="lado3">Terceiro lado:</label>
+            <input type="number" id="lado3" name="lado3" required>
+            <br><br>
+
+            <button type="submit">Classificar Triângulo</button>
+            <button type="reset">Limpar</button>
+        </form>
+        <br><br>
+
+
+
+        <div id="resultado"></div>
+
+    </div>
+
+</body>
+
+</html>

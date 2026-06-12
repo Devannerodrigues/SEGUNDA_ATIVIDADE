@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+
+     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script_04.js" defer></script>
+
+    <script>
+        /*  document.getElementById('formulario').addEventListener('submit', function(event) {
+              event.preventDefault(); // Impede o envio do formulário
+  
+              // Obtém os valores dos campos de entrada
+              const numero1 = parseFloat(document.getElementById('numero1').value);
+              const numero2 = parseFloat(document.getElementById('numero2').value);
+              const numero3 = parseFloat(document.getElementById('numero3').value);
+  
+              // Calcula a média
+              const media = (numero1 + numero2 + numero3) / 3;
+  
+              // Exibe o resultado
+              document.getElementById('resultado').textContent = 'A média é: ' + media.toFixed(2);
+          });*/
+    </script>
+</head>
+
+<body>
+    <div id="geral">
+        <h1>Entrar com Nome, 3 notas de um aluno. Ache a média. Caso
+a média seja maior ou igual a 6, apresentar o texto
+Aprovado, caso contrário apresentar o texto Reprovado</h1>
+
+        <form id="formulario">
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+
+            <label for="nota1">Primeira nota:</label>
+            <input type="number" id="nota1" name="nota1" required>
+            <br><br>
+
+            <label for="nota2">Segunda nota:</label>
+            <input type="number" id="nota2" name="nota2" required>
+            <br><br>
+
+            <label for="nota3">Terceira nota:</label>
+            <input type="number" id="nota3" name="nota3" required>
+            <br><br>
+
+            <button type="submit">Calcular Média</button>
+            <button type="reset">Limpar</button>
+        </form>
+            <br><br>
+
+        
+
+        <div id="resultado"></div>
+
+    </div>
+
+</body>
+
+</html>
